@@ -203,10 +203,10 @@ const App: React.FC = () => {
 							position: "relative",
 							left: "15px"
 						}}>
-						<p style={{ fontFamily: "arial" }}>Всего задач: {todos.length}</p>
 						<p style={{ fontFamily: "arial" }}>
 							Выполнено: {todos.filter((todo) => todo.completed).length}
 						</p>
+						<p style={{ fontFamily: "arial" }}>Всего задач: {todos.length}</p>
 						<p style={{ fontFamily: "arial" }}>
 							Не выполнено: {todos.filter((todo) => !todo.completed).length}
 						</p>
