@@ -248,7 +248,7 @@ const App: React.FC = () => {
 					</Button>
 				</Box>
 			</form>
-			{isAddingTodo && ( // Условный рендеринг индикатора загрузки
+			{isAddingTodo && ( 
 				<CircularProgress style={{ margin: "20px auto", display: "block" }} />
 			)}
 			<List>
@@ -301,7 +301,7 @@ const App: React.FC = () => {
 				<DialogTitle>Подтверждение удаления</DialogTitle>
 				<DialogContent>
 					<DialogContentText>
-						Вы действительно хотите удалить задачу?
+						Вы действительно хотите удалить ?
 					</DialogContentText>
 				</DialogContent>
 				<DialogActions>
@@ -322,7 +322,7 @@ const App: React.FC = () => {
 				<DialogTitle>Подтверждение удаления всех задач</DialogTitle>
 				<DialogContent>
 					<DialogContentText>
-						Вы действительно хотите удалить все задачи ?
+						Вы действительно хотите удалить ?
 					</DialogContentText>
 				</DialogContent>
 				<DialogActions>
