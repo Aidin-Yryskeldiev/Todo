@@ -200,6 +200,7 @@ const App: React.FC = () => {
 						sx={{
 							display: "flex",
 							gap: "30px",
+							position: "relative",
 							left: "28px"
 						}}>
 						<p style={{ fontFamily: "arial" }}>Всего задач: {todos.length}</p>
