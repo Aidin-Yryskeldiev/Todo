@@ -201,14 +201,23 @@ const App: React.FC = () => {
 							display: "flex",
 							gap: "30px",
 							position: "relative",
-							left: "7px"
+							left: "30px",
 						}}>
-						<p style={{ fontFamily: "arial" }}>Всего задач: <div style={{textAlign: "center"}}>{todos.length}</div></p>
 						<p style={{ fontFamily: "arial" }}>
-							Выполнено: <div style={{textAlign: "center"}}>{todos.filter((todo) => todo.completed).length}</div>
+							Всего задач:{" "}
+							<div style={{ textAlign: "center" }}>{todos.length}</div>
 						</p>
 						<p style={{ fontFamily: "arial" }}>
-							Не выполнено: <div style={{textAligh: "center"}}>{todos.filter((todo) => !todo.completed).length}</div>
+							Выполнено:{" "}
+							<div style={{ textAlign: "center" }}>
+								{todos.filter((todo) => todo.completed).length}
+							</div>
+						</p>
+						<p style={{ fontFamily: "arial" }}>
+							Не выполнено:{" "}
+							<div style={{ textAlign: "center" }}>
+								{todos.filter((todo) => !todo.completed).length}
+							</div>
 						</p>
 					</Box>
 				</div>
@@ -248,7 +257,7 @@ const App: React.FC = () => {
 					</Button>
 				</Box>
 			</form>
-			{isAddingTodo && ( 
+			{isAddingTodo && ( // Условный рендеринг индикатора загрузки
 				<CircularProgress style={{ margin: "20px auto", display: "block" }} />
 			)}
 			<List>
