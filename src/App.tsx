@@ -248,7 +248,7 @@ const App: React.FC = () => {
 					</Button>
 				</Box>
 			</form>
-			{isAddingTodo && ( // Условный рендеринг индикатора загрузки
+			{isAddingTodo && ( 
 				<CircularProgress style={{ margin: "20px auto", display: "block" }} />
 			)}
 			<List>
