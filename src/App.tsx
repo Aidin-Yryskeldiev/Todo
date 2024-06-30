@@ -201,7 +201,7 @@ const App: React.FC = () => {
 							display: "flex",
 							gap: "30px",
 							position: "relative",
-							left: "25px"
+							left: "20px"
 						}}>
 						<p style={{ fontFamily: "arial" }}>Всего задач: {todos.length}</p>
 						<p style={{ fontFamily: "arial" }}>
