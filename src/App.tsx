@@ -201,7 +201,7 @@ const App: React.FC = () => {
 							display: "flex",
 							gap: "30px",
 						}}>
-						<p style={{ fontFamily: "arial" }}>Всего задач: <span>{todos.length}</span></p>
+						<p style={{ fontFamily: "arial" }}>Всего задач <div style={{textAlign: "center"}}>{todos.length}</div></p>
 						<p style={{ fontFamily: "arial" }}>
 							Выполнено: {todos.filter((todo) => todo.completed).length}
 						</p>
