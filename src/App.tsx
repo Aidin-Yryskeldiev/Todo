@@ -203,12 +203,12 @@ const App: React.FC = () => {
 							position: "relative",
 							left: "7px"
 						}}>
-						<p style={{ fontFamily: "arial" }}>Всего задач: {todos.length}</p>
+						<p style={{ fontFamily: "arial" }}>Всего задач: <div style={{textAlign: "center"}}>{todos.length}</div></p>
 						<p style={{ fontFamily: "arial" }}>
-							Выполнено: {todos.filter((todo) => todo.completed).length}
+							Выполнено: <div style={{textAlign: "center"}}>{todos.filter((todo) => todo.completed).length}</div>
 						</p>
 						<p style={{ fontFamily: "arial" }}>
-							Не выполнено: {todos.filter((todo) => !todo.completed).length}
+							Не выполнено: <div style={{textAligh: "center"}}>{todos.filter((todo) => !todo.completed).length}</div>
 						</p>
 					</Box>
 				</div>
